@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ROCK | PAPER | SCISSORS</title>
+  </head>
+  <body>
+    <h1>ROCK | PAPER | SCISSORS</h1>
+
+    <div class="points">
+      <p class="points-player">PLAYER</p>
+      <span class="points-player-result"></span>
+      <span class="points-comp-result"></span>
+      <p class="points-comp">COMP</p>
+    </div>
+
+    <div class="select">
+      <img data-option="paper" alt="" src="./paper.jpg" title="paper" />
+      <img data-option="rock" alt="" src="./rock.jpg" title="rock" />
+      <img
+        data-option="scissors"
+        alt=""
+        src="./scissors.jpg"
+        title="scissors"
+      />
+    </div>
+
+    <div class="choices">
+      <p class="player-choice">
+        Your choice: <span data-summary="your-choice">rock</span>
+      </p>
+      <p class="comp-choice">
+        Comp choice: <span data-summary="ai-choice">rock</span>
+      </p>
+      <h2>The winner: <span data-summary="who-win"></span></h2>
+    </div>
+
+    <button class="start">Let's play!!!</button>
+    <button class="restart-game">Restart game</button>
+    <script src="main.js"></script>
+  </body>
+</html>

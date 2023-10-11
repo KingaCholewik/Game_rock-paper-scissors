@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1000px;
+  margin: 50px auto;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(244, 236, 225);
+}
+button {
+  cursor: pointer;
+}
+.points {
+  display: flex;
+  gap: 30px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+.points-player {
+  padding: 10px 30px;
+  background-color: rgb(6, 159, 6);
+  border-radius: 10px;
+}
+.points-comp {
+  padding: 10px 30px;
+  background-color: rgb(240, 41, 41);
+  border-radius: 10px;
+}
+
+.select img {
+  width: 200px;
+  height: 180px;
+  margin: 0 20px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.select img.active {
+  transform: scale(120%);
+}
+.choices.active p {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+.choices {
+  display: none;
+}
+.start {
+  background-color: rgb(183, 170, 49);
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.restart-game {
+  font-size: 1.2rem;
+  background-color: grey;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  display: none;
+}
