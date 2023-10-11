@@ -72,6 +72,8 @@ const startGame = () => {
   document.querySelector('.points-comp-result').textContent =
     gameSummery.losses;
   document.querySelector('.restart-game').style.display = 'block';
+  document.querySelector(`[data-option="${game.playerHand}"]`).style.boxShadow =
+    '';
 };
 
 document.querySelector('.start').addEventListener('click', startGame);
@@ -84,7 +86,7 @@ const restartGame = () => {
   game.playerHand = '';
   document.querySelector('.restart-game').style.display = 'none';
   document.querySelector('.choices').style.display = 'none';
-  hands.forEach((hand) => (hand.style.boxShadow = ''));
+
   document.querySelector('.points-player-result').textContent = '';
   document.querySelector('.points-comp-result').textContent = '';
 };
